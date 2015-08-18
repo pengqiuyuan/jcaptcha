@@ -1,11 +1,16 @@
 # jcaptcha
 移除  com.sun.image.codec 支持 OpenJDK 7
 
-# 效果图
+效果图
 
-# 问题
+问题
+ClassNotFoundException: com.sun.image.codec.jpeg.ImageFormatException
 
-# 替代 jcaptcha-1.0 就好了
+编译打包项目
+mvn compile
+mvn clean package -Dmaven.test.skip=true
+target 下的 jcaptcha-1.0.jar 替换 .m2/repository/com/octo/captcha/jcaptcha/1.0 下的jar 就ok了
+
 ```
 	<dependencies>
 			<dependency>
