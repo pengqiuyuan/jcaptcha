@@ -1,6 +1,11 @@
 # jcaptcha
 移除  com.sun.image.codec 支持 OpenJDK 7
 
+# 效果图
+
+# 问题
+
+# 替代 jcaptcha-1.0 就好了
 ```
 	<dependencies>
 			<dependency>
