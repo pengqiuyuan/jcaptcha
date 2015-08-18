@@ -4,12 +4,16 @@
 效果图
 
 问题
+```
 ClassNotFoundException: com.sun.image.codec.jpeg.ImageFormatException
+```
 
 编译打包项目
+```
 mvn compile
 mvn clean package -Dmaven.test.skip=true
 target 下的 jcaptcha-1.0.jar 替换 .m2/repository/com/octo/captcha/jcaptcha/1.0 下的jar 就ok了
+```
 
 ```
 	<dependencies>
